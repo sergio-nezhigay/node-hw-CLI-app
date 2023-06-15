@@ -13,21 +13,30 @@ program.parse(process.argv);
 const argv = program.opts();
 
 async function invokeAction({ action, id, name, email, phone }) {
-  switch (action) {
-    case "list":
-      const allContacts = await contacts.listContacts();
-      return console.table(allContacts);
-    case "get":
-      const contact = await contacts.getContactById(id);
-      return console.table(contact);
-    case "add":
-      const newContact = await contacts.addContact(name, email, phone);
-      return console.table(newContact);
-    case "remove":
-      const removedContact = await contacts.removeContact(id);
-      return console.table(removedContact);
-    default:
-      console.warn("\x1B[31m Unknown action type!");
+  try {
+    switch (action) {
+      case "list":
+        const allContacts = await contacts.listContacts();
+        console.table(allContacts);
+        break;
+      case "get":
+        const contact = await contacts.getContactById(id);
+        console.table(contact);
+        break;
+      case "add":
+        const newContact = await contacts.addContact(name, email, phone);
+        console.table(newContact);
+        break;
+      case "remove":
+        const removedContact = await contacts.removeContact(id);
+        console.table(removedContact);
+        break;
+      default:
+        console.warn("\x1B[31m Unknown action type!");
+    }
+  } catch (error) {
+    console.error("An error occurred:", error.message);
   }
 }
+
 invokeAction(argv);
