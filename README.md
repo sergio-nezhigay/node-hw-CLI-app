@@ -73,7 +73,7 @@ node index.js --action list
 node index.js --action get --id <contact-id>
 ```
 
-![Get Contact](https://i.ibb.co/LQP4WS0/screenshot-get-contact.png)
+![Get Contact](https://i.ibb.co/Jk14N3d/2023-06-15-095521.png)
 
 3. Add a new contact:
 
