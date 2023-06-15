@@ -65,7 +65,7 @@ Note: Replace `<type>` with the appropriate data type for each option argument.
 node index.js --action list
 ```
 
-![List Contacts](https://ibb.co/jvXQG7D)
+![List Contacts](https://i.ibb.co/6RCTb6F/2023-06-15-095322.png)
 
 2. Get a contact by ID:
 
@@ -73,7 +73,7 @@ node index.js --action list
 node index.js --action get --id <contact-id>
 ```
 
-![Get Contact](https://i.ibb.co/Jk14N3d/2023-06-15-095521.png)
+![Get Contact](https://i.ibb.co/N13wPxF/2023-06-15-095417.png)
 
 3. Add a new contact:
 
@@ -81,7 +81,7 @@ node index.js --action get --id <contact-id>
 node index.js --action add --name <contact-name> --email <contact-email> --phone <contact-phone>
 ```
 
-![Add Contact](https://i.ibb.co/VjZj32W/screenshot-add-contact.png)
+![Add Contact](https://i.ibb.co/w0X0YMN/2023-06-15-095455.png)
 
 4. Remove a contact by ID:
 
@@ -89,7 +89,7 @@ node index.js --action add --name <contact-name> --email <contact-email> --phone
 node index.js --action remove --id <contact-id>
 ```
 
-![Remove Contact](https://i.ibb.co/h86jkYM/screenshot-remove-contact.png)
+![Remove Contact](https://i.ibb.co/Jk14N3d/2023-06-15-095521.png)
 
 ## License
 
