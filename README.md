@@ -65,7 +65,7 @@ Note: Replace `<type>` with the appropriate data type for each option argument.
 node index.js --action list
 ```
 
-![List Contacts](https://i.ibb.co/jvXQG7D/screenshot-list-contacts.png)
+![List Contacts](https://ibb.co/jvXQG7D)
 
 2. Get a contact by ID:
 
